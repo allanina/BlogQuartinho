@@ -1,0 +1,101 @@
+{% load static %}
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <center>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/DgfLmqC/n2pa11y1-TXSYVXYrt-La-B-d1e7bb452684552f48615d67cc545956.png" alt="n2pa11y1-TXSYVXYrt-La-B-d1e7bb452684552f48615d67cc545956" border="0"></a>
+        <iframe width="700" height="200" src="https://www.youtube.com/embed/DcD5UOhOrDQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    </header>
+
+<div id="site">
+    <div id="cabecalho">
+        <div id="menu-principal">
+            <ul>
+                <li>
+                    <a class="ativo" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="empresa.html">Empresa</a>
+                </li>
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="conteudo">
+        <div align="justify">
+
+        <div id="conteudo-principal">
+            <h1>Bem-vindo ao site da Empresa</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada eros lorem, nec commodo justo.
+                Duis semper feugiat turpis, sed commodo nisi semper et. Maecenas et elit leo. Duis posuere elementum nulla vitae tempor.
+                Ut ut quam non odio dapibus facilisis. Nulla sagittis libero in felis consectetur ac consectetur erat accumsan.
+                Maecenas ut velit vel dui viverra vestibulum id a nunc. Praesent quis condimentum enim. Curabitur vel risus lectus, ut viverra lorem. Aliquam erat volutpat.
+                Praesent ac sem placerat odio cursus luctus. Aenean et turpis orci, non pulvinar ligula.
+                Fusce non purus et justo commodo volutpat non sed nisi. Etiam vitae mi velit.
+            </p>
+            <center>
+            <a href="https://ibb.co/Vqj2H3w"><img src="https://i.ibb.co/1mv8sbz/photo4949513655167330476.jpg" alt="photo4949513655167330476" border="0"></a>
+                <a href="URL" target="_blank">text</a>
+            </center>
+            <p>
+                O single de estréia da banda, "Sem Pressa" fala de um tempo e de uma cidade que não existem mais. Exalando a saudade de momentos juntos daqueles que
+                amamos e de explorar os lugares e as sensações fora de casa. "Sem Pressa" também nos ensina a perceber os detalhes e o lado fantástico de vivenciar nosso
+                lar por tanto tempo. Apertando o play, a gente espera que vocês façam uma viagem adentro e resgatem na memória momentos ensolarados de outrora que já já estão de volta.
+            </p>
+        </div>
+            <p>
+                <a href="servicos.html">Conheça nossos serviços</a>
+            </p>
+        </div>
+        <div id="conteudo-secundario">
+            <h1>Notícias</h1>
+
+            <main>
+            <justify>
+            {% block content %}
+            {% endblock %}
+            </justify>
+            </main>
+        </div>
+        <center>
+        <iframe width="700" height="200" src="https://www.youtube.com/embed/2ydwZW2AR8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+    </div>
+    <div id="rodape">
+        <div align="justify">
+        <p id="telefone-email">
+            contato@exemplo.com.br
+            <br>
+            <span class="ddd">41</span> 5555-5555
+        </p>
+
+        <p id="endereco">
+            Rua do Endereço, 123, Bairro
+            <br>
+            CEP 80000-000
+            <br>
+            Curitiba - PR
+        </p>
+
+        <small id="copyright">
+            &copy; Empresa Ltda. Todos os Direitos Reservados.
+        </small>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
