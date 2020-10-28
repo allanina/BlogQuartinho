@@ -1,11 +1,12 @@
 {% extends "blog/base.html" %}
-     
+
 {% block title %} O Quartinho {% endblock %}
-     
+
 {% block content %}
     {% for post in post_list %}
+
         <article>
-            <h2>
+            <h2 class="titulo">
                 <a href="{{ post.get_absolute_url }}">
                     {{ post.title }}
                     </a>
@@ -13,7 +14,7 @@
             <p class="date">
                 Publicado em {{ post.created }} por {{ post.author }}
             </p>
-            {{ post.body|linebreaks|truncatewords:10 }}
+            {{ post.body|linebreaks|truncatewords:30 }}
         </article>
     {% endfor %}
 {% endblock %}
