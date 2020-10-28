@@ -11,20 +11,26 @@ h1 {
     font-weight: normal;
     border-bottom: 1px solid;
 }
-
+h2.titulo{
+    font-size: 15px;
+}
 h2 {
-    color: #0072aa;
+    color:#e4622e;
     font-weight: normal;
-    margin-bottom: 1px;
+    font-size: 10px;
+    margin-bottom: px;
+
 }
 
 a {
-    color:#0072aa;
+    color:#e4622e;
     text-decoration:none;
 }
 
 p.date {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-style: italic;
     margin-top: 1px;
-}
+
+div.conteudo{font-size:10px;}
+div.title{font-size:20px;}
